@@ -1,4 +1,3 @@
-# cricketGame
 # 🏏 Cricket Game - Bat, Ball, Stump
 
 A simple and fun browser-based **Cricket Game** built using only HTML, CSS, and JavaScript. The user plays against the computer by choosing either **Bat**, **Ball**, or **Stump** — and the winner is decided based on predefined game rules.
