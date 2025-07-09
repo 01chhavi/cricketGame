@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Game Buttons */
+.choice-button {
+  height: 120px;
+  width: 120px;
+  margin: 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff8dc;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Images inside Buttons */
+.choice-image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.choice-button:hover .choice-image {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Result Display */
+h3 {
+  font-weight: 500;
+  color: #444;
+  margin: 10px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Result Styles */
+#result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Win/Lose/Tie Color Classes */
+.result-win {
+  color: #2e7d32; /* Green */
+  font-weight: bold;
+}
+
+.result-lose {
+  color: #c62828; /* Red */
+  font-weight: bold;
+}
+
+.result-tie {
+  color: #6c757d; /* Gray */
+  font-weight: bold;
+}
+
+/* Reset Button */
+button:last-of-type {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:last-of-type:hover {
+  background-color: #e63946;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .choice-button {
+    height: 90px;
+    width: 90px;
+  }
+
+  .choice-image {
+    height: 60px;
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
